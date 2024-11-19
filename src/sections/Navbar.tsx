@@ -56,13 +56,13 @@ export default function Navbar() {
                             variant="secondary"
                             className="hidden md:inline-flex items-center"
                         >
-                            Log In
+                            Masuk
                         </Button>
                         <Button
                             variant="primary"
                             className="hidden md:inline-flex items-center"
                         >
-                            Sign Up
+                            Daftar
                         </Button>
                     </div>
                 </div>
