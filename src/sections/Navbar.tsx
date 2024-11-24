@@ -1,5 +1,8 @@
+"use client";
+
 import Image from "next/image";
 import Button from "@/components/Button";
+import { useState } from "react";
 
 const navLinks = [
     { label: "Home", href: "#" },
@@ -9,10 +12,11 @@ const navLinks = [
 ];
 
 export default function Navbar() {
+    const [isOpen, setIsOpen] = useState(false);
     return (
-        <section className="py-4 lg:py-8">
+        <section className="py-4 lg:py-8 sticky top-0 z-50">
             <div className="container max-w-5xl">
-                <div className="grid grid-cols-2 border lg:grid-cols-3 border-white/15 rounded-full px-4 md:pr-2 items-center">
+                <div className="grid grid-cols-2 border lg:grid-cols-3 bg-neutral-950/70 backdrop-blur border-white/15 rounded-full px-4 md:pr-2 items-center">
                     <div>
                         <Image
                             src="/logo_tulisan.png"
