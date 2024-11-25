@@ -32,7 +32,7 @@ export default function LogoTicker() {
                 </h3>
                 <div className="flex overflow-hidden mt-12 [mask-image:linear-gradient(to_right,transparent,black_10%,black_90%,transparent)]">
                     <motion.div
-                        animate={{ x: "50%" }}
+                        animate={{ x: "-100%" }}
                         transition={{
                             duration: 30,
                             ease: "linear",
@@ -44,9 +44,10 @@ export default function LogoTicker() {
                             <Fragment key={i}>
                                 {logos.map((logo) => (
                                     <Image
-                                        key={logo.name}
+                                        key={`${logo.name}-${i}`}
                                         src={logo.image}
                                         alt={logo.name}
+                                        className="w-auto h-12" // Sesuaikan ukuran logo
                                     />
                                 ))}
                             </Fragment>
