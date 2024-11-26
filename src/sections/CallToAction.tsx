@@ -33,7 +33,7 @@ export default function CallToAction() {
                                     &#10038;
                                 </span>
                                 <span className="group-hover:text-lime-400">
-                                    Coba Gratis
+                                    Chat Sekarang
                                 </span>
                             </div>
                         ))}
